@@ -1,4 +1,4 @@
-# Budget50
+# Budget and Expense Tracker
 
 ## Web Application to keep track of income and expenses
 
