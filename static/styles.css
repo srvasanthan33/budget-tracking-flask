@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Poppins:wght@300;400;500&display=swap');
+
+
+body
+{
+    background: #BE93FC;
+    margin: 0;
+    user-select: none;
+    overflow: overlay;
+}
+
+.logo
+{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.logo-font
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    text-decoration: none;
+    padding-left: 2px;
+}
+
+.amount 
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.amount input
+{
+    border: none;
+    outline: none;
+    border-bottom-style: solid;
+    width: 200px;
+    text-align: right;
+    margin-left: 50px;
+}
+
+.categories 
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
+    gap: 10px 20px;
+    width: 1000px;
+}
+
+.form-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.text-categories
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-center
+{
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.expense-form button
+{
+    margin-top: 50px;    
+    color: white;
+    padding: .5rem;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+    width: 200px;
+}
+
+.date
+{
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+/* Progress bar */
+
+.container-bars
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bars
+{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;    
+}
+
+.all
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#name-category
+{
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 9;
+}
+
+.circle-wrap 
+{
+    display: grid;
+    grid-template-columns: repeat(1, 160px);
+    grid-gap: 80px;
+    width: 150px;
+    height: 150px;
+    background: #c9c9c9;
+    border-radius: 50%;
+    margin: 4px 20px 20px;
+}
+
+.circle-wrap .circle .mask 
+{
+    clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle 
+{
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    background: #BE93FC;
+    line-height: 120px;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 13px;
+    color: black;
+    position: absolute;
+    z-index: 100;
+    font-weight: 500;
+    font-size: 2em;
+}
+
+/* End progress bar */
+
+#total-balance
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#text-expenses
+{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 18px;
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+
+.name-bar p
+{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.table-container
+{
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 0;
+}
+
+.table-center-text
+{
+    vertical-align: middle;
+}
+
+.table-center-text-and-icons
+{
+    vertical-align: middle; 
+    display: flex; 
+    align-items: center;
+}
+
+#balance-number
+{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.total-income-expenses-container
+{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.type-categories
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.type
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin-right: 30px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.value-checkbox-type
+{
+    margin-left: 5px;
+    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.main-index
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.container-main
+{
+    background: rgba(255, 255, 255, .5);
+    height: 100vh;
+}
+
+.input-amount-expense
+{
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, .3);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1.5rem * 2.5);
+    border-radius: 100px;
+    width: 100%;
+    transition: background .5s;
+}
+
+.input-amount-expense:focus
+{
+    background: white;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar 
+{
+    width: 1em;
+    background: transparent;
+}
+  
+::-webkit-scrollbar-track 
+{
+    background: #BE93FC;
+    margin-top: calc(72px + .5em);
+    margin-bottom: .5em;
+}
+
+::-webkit-scrollbar-thumb 
+{
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+    background: rgba(255, 255, 255, .5);
+}
+
+/* End scrollbar */
+
+.center-numb-button
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-exp
+{
+    width: 50%;
+    float: left;
+}
+
+.container-inc
+{
+    width: 50%;
+    float: right;
+}
+
+.total-categories
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.title
+{
+    padding: 30px;
+    text-align: center;
+}
+
+button
+{
+    background: black;
+    color: white;
+    width: 300px;
+    padding: 1rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+}
+
+button:hover
+{
+    background-color: rgba(0, 0, 0, .85);
+    cursor: pointer;
+}

@@ -1,0 +1,41 @@
+{% extends "login-layout.html" %}
+
+{% block title %}
+    Add Category
+{% endblock %}
+
+{% block main %}
+    
+    <div class="login-card-header">
+        <h1>Add Category</h1>
+        <div>Please fill out this form</div>
+    </div>
+    <form class="login-card-form" action="/add-category" method="post">
+        <div class="form-item">
+            <span class="form-item-icon material-symbols-rounded">edit</span>
+            <input type="text" name="name" placeholder="Enter Name" required autofocus autocomplete="off">
+        </div>  
+        <div class="color-container">
+            <p id="text-color">Pick a Color</p>
+            <div class="form-item">
+                <span class="form-item-icon material-symbols-rounded">palette</span>
+                <input type="color" name="color" value="#9220f6" placeholder="Pick a Color" id="input-color">
+            </div>
+        </div>
+        <div class="type-category-container">
+            <p id="text-color">Select a Type</p>
+            <div class="options-container">
+                <div class="opt-1-container">
+                    <input type="radio" name="type" id="opt-1" value="expense" required>
+                    <label for="opt-1" class="text-radio">Expense</label>
+                </div>                      
+                <div class="opt-2-container">
+                    <input type="radio" name="type" id="opt-2" value="income" required>
+                    <label for="opt-2" class="text-radio">Income</label>
+                </div>              
+            </div>
+        </div>        
+        <button type="submit">Add Category</button>
+    </form>
+
+{% endblock %}

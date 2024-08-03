@@ -1,0 +1,30 @@
+{% extends "login-layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <div class="login-card-logo">
+        <img src="/static/wallet.svg">
+        <p class="logo-font">Budget50</p>
+    </div>
+    <div class="login-card-header">
+        <h1>Sign In</h1>
+        <div>Please log in to use platform</div>
+    </div>
+    <form class="login-card-form" action="/login" method="post">
+        <div class="form-item">
+            <span class="form-item-icon material-symbols-rounded">account_circle</span>
+            <input type="text" name="username" placeholder="Enter Username" required autofocus>
+        </div>
+        <div class="form-item">
+            <span class="form-item-icon material-symbols-rounded">lock</span>
+            <input type="password" name="password" placeholder="Enter Password" required>
+        </div>
+        <button type="submit">Sign In</button>
+    </form>
+    <div class="login-card-footer">
+        Don't have an account? <a href={{url_for('signup')}}>Create a free account</a>
+    </div>
+{% endblock %}

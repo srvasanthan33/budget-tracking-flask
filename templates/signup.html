@@ -1,0 +1,31 @@
+{% extends "login-layout.html" %}
+
+{% block title %}
+    Sign Up
+{% endblock %}
+
+{% block main %}
+    <div class="login-card-logo">
+        <img src="/static/wallet.svg">
+        <p class="logo-font">Budget50</p>
+    </div>
+    <div class="login-card-header">
+        <h1>Create Account</h1>
+        <div>Please fill out this form</div>
+    </div>
+    <form class="login-card-form" action="/signup" method="post">
+        <div class="form-item">
+            <span class="form-item-icon material-symbols-rounded">account_circle</span>
+            <input type="text" name="username" placeholder="Enter Username" required autofocus autocomplete="off">
+        </div>
+        <div class="form-item">
+            <span class="form-item-icon material-symbols-rounded">lock</span>
+            <input type="password" name="password" placeholder="Enter Password" required>
+        </div>
+        <div class="form-item">
+            <span class="form-item-icon material-symbols-rounded">lock</span>
+            <input type="password" name="confirmation" placeholder="Confrm Password" required>
+        </div>
+        <button type="submit">Sign Up</button>
+    </form>
+{% endblock %}
